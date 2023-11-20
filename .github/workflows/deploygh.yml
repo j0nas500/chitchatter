@@ -34,6 +34,7 @@ jobs:
           npm run analyze -- --html build/bundle-info.html
 
       - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./build
           force_orphan: true
